@@ -43,3 +43,17 @@ The VSL is configured with:
 - inline playback on mobile
 
 The `/checkout/` route and `/api/create-checkout-session` are retained from the previous Vercel build.
+
+
+## Checkout page
+
+`/checkout/` now mirrors the supplied Elementor checkout structure:
+- compact Step 2 header
+- three-step progress indicator
+- original 8-image offer carousel
+- centred Stripe Embedded Checkout
+- offer / onboarding cards
+- 14-day money-back guarantee block
+- dark FAQ section
+
+Stripe still requires `STRIPE_SECRET_KEY` in Vercel Production environment variables.
