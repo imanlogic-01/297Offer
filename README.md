@@ -30,3 +30,16 @@ The offer page submits to the existing GHL webhook and redirects to `/checkout/`
 ## Production test
 
 Do not test Embedded Checkout inside an editor iframe. Open the deployed `/checkout/` URL directly in a browser.
+
+## Root page correction
+
+The root route `/` uses the supplied dark ImanLogic £297 landing page.
+
+The VSL is configured with:
+- controls enabled
+- autoplay disabled
+- muted by default
+- `preload="none"`
+- inline playback on mobile
+
+The `/checkout/` route and `/api/create-checkout-session` are retained from the previous Vercel build.
